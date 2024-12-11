@@ -16,5 +16,10 @@ namespace windows_form_study_project
         {
             InitializeComponent();
         }
+
+        private void btnAcao_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Seu nome completo é: " + txtNome.Text + " " + txtSobrenome.Text);
+        }
     }
 }
