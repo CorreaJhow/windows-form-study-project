@@ -38,6 +38,7 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,13 +55,20 @@
             // 
             // btnCalc
             // 
+            this.btnCalc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCalc.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCalc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalc.FlatAppearance.BorderSize = 0;
+            this.btnCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalc.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCalc.Location = new System.Drawing.Point(271, 423);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(125, 31);
             this.btnCalc.TabIndex = 1;
             this.btnCalc.Text = "Calcular";
-            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -73,6 +81,9 @@
             // 
             // txtNumero1
             // 
+            this.txtNumero1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNumero1.ForeColor = System.Drawing.SystemColors.MenuText;
             this.txtNumero1.Location = new System.Drawing.Point(194, 211);
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(125, 20);
@@ -80,19 +91,27 @@
             // 
             // cboTipoConta
             // 
+            this.cboTipoConta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboTipoConta.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.cboTipoConta.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cboTipoConta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboTipoConta.FormattingEnabled = true;
             this.cboTipoConta.Items.AddRange(new object[] {
             "Divisão",
             "Soma",
             "Multiplicação",
             "Subtração"});
-            this.cboTipoConta.Location = new System.Drawing.Point(194, 287);
+            this.cboTipoConta.Location = new System.Drawing.Point(194, 292);
             this.cboTipoConta.Name = "cboTipoConta";
             this.cboTipoConta.Size = new System.Drawing.Size(126, 21);
             this.cboTipoConta.TabIndex = 6;
             // 
             // txtNumero2
             // 
+            this.txtNumero2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNumero2.Location = new System.Drawing.Point(194, 251);
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(125, 20);
@@ -109,13 +128,20 @@
             // 
             // btnLimpar
             // 
+            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpar.BackColor = System.Drawing.Color.Gold;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpar.Location = new System.Drawing.Point(122, 423);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(125, 31);
             this.btnLimpar.TabIndex = 9;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -135,6 +161,15 @@
             this.lblResultado.Size = new System.Drawing.Size(0, 16);
             this.lblResultado.TabIndex = 11;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 390);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(503, 100);
+            this.panel1.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,6 +186,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -172,6 +208,7 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
