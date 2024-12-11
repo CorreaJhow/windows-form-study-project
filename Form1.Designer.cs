@@ -187,11 +187,11 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(444, 7);
+            this.button1.Location = new System.Drawing.Point(474, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.Size = new System.Drawing.Size(17, 19);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Fechar";
+            this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // panel2
