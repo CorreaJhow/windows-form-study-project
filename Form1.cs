@@ -8,5 +8,10 @@ namespace windows_form_study_project
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, System.EventArgs e)
+        {
+            lblResultado.Text = "";
+        }
     }
 }
